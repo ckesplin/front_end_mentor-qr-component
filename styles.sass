@@ -1,0 +1,63 @@
+$white: hsl(0, 0%, 100%)
+$light_gray: hsl(212, 45%, 89%)
+$grayish_blue: hsl(220, 15%, 55%)
+$dark_blue: hsl(218, 44%, 22%)
+$card_width: 320px
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  border: 0
+
+body
+  background-color: $light_gray
+
+.center
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+
+.bg-white
+  background-color: $white
+
+.card
+  height: 500px
+  width: $card_width
+  border-radius: 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.img
+  height: calc($card_width - 32px)
+  width: calc($card_width - 32px)
+  border-radius: 10px
+  margin: 16px 16px 0
+
+.card-text
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: 100%
+  margin: 20px 28px
+
+.card-title
+  font-weight: 700
+  font-size: 20px
+  color: $dark_blue
+  text-align: center
+  margin-bottom: 16px
+
+.card-subtext
+  font-weight: 400
+  font-size: 15px
+  color: $grayish_blue
+  text-align: center
+
+
+
+
